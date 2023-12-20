@@ -8,7 +8,8 @@
 ```
 rsync -av --delete --exclude '.*' /home/chistov/ /tmp/backup
 ```  
-
+![alt text](https://github.com/PavelKondakov22/backup1/blob/main/z1.png)  
+![alt text](https://github.com/PavelKondakov22/backup1/blob/main/z1.1.png)  
 ### Задание 2
 - Написать скрипт и настроить задачу на регулярное резервное копирование домашней директории пользователя с помощью rsync и cron.
 - Резервная копия должна быть полностью зеркальной
