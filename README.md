@@ -15,4 +15,12 @@ rsync -av --delete --exclude '.*' /home/chistov/ /tmp/backup
 - Резервная копия должна быть полностью зеркальной
 - Резервная копия должна создаваться раз в день, в системном логе должна появляться запись об успешном или неуспешном выполнении операции
 - Резервная копия размещается локально, в директории `/tmp/backup`
-- На проверку направить файл crontab и скриншот с результатом работы утилиты.
+- На проверку направить файл crontab и скриншот с результатом работы утилиты.  
+```
+#!/bin/sh
+rsync -av --delete --exclude '.*' /home/chistov/ /tmp/backup >> /var/log/crontab.log  
+```
+![alt text](https://github.com/PavelKondakov22/backup1/blob/main/z2.png)  
+
+https://github.com/PavelKondakov22/backup1/blob/main/pavel  
+
